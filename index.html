@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -31,6 +31,7 @@ ul {
 
 li {
   float: left;
+  width: 20%
 }
 
 li a {
@@ -44,28 +45,136 @@ li a {
 li a:hover {
   background-color: #111;
 }
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 </style>
 </head>
 
-<body>
+<body background="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e1c678f4-c641-4015-a0f1-18e6154aa6a0/ddiuroz-0e05af31-9ac9-4316-b6d3-1c55abfca9e6.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UxYzY3OGY0LWM2NDEtNDAxNS1hMGYxLTE4ZTYxNTRhYTZhMFwvZGRpdXJvei0wZTA1YWYzMS05YWM5LTQzMTYtYjZkMy0xYzU1YWJmY2E5ZTYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.dHL9Er0WOTCnbnlZCS0lUxA0VOg9nXzx9xB0aH6tqtc">
 
 <p>&nbsp;</p>
-<hr /><span class="auto-style2">
-<img alt="" height="114" src="ross.PNG" style="float: left" width="147" /></span><p>
+<span class="auto-style2">
+<img alt="" height="115" src="file:///C:/Users/benwa/Pictures/ross.PNG" style="float: left" width="147" /></span><hr /><p>
 &nbsp;</p>
 <h1 class="auto-style1">&nbsp;<span class="auto-style2">Bushfire Games</span></h1>
 <hr />
 <ul>
   <li style="float:center"><a class="active" href="#home">Home</a></li>
-  <li style="float:center"><a href="#Games">News</a></li>
-  <li style="float:center"><a href="#contact">Contact</a></li>
-  <li style="float:center"><a href="#about">About</a></li>
+  <li style="float:center"><a href="#Games">Game 1</a></li>
+  <li style="float:right"><a href="#contact">Contact Us</a></li>
+  <li style="float:center"><a href="#about">Game 2</a></li>
+  <li style="float:center"><a href="#about">Game 3</a></li>
 </ul>
 <p class="auto-style2">&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
 <center>
+
+<video width="426" height="240" controls>
+<source src="fort.mp4" type="video/mp4">
+</video>
+
 
 <div class="slideshow-container">
 
@@ -77,13 +186,13 @@ li a:hover {
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="https://image.businessinsider.com/5da36f244af90959b36b11b6?width=1100&format=jpeg&auto=webp">
+  <img src="file:///C:/Users/benwa/Pictures/linus.jpg" height="554" width="554">
   <div class="text">oh hey</div>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="https://image.businessinsider.com/5da36f244af90959b36b11b6?width=1100&format=jpeg&auto=webp">
+  <img src="file:///C:/Users/benwa/Pictures/p/pik.PNG" height="370" width="370">
   <div class="text">mmmmmmmm</div>
 </div>
 
