@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -65,7 +65,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -147,14 +147,35 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 25%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
 </style>
 </head>
 
-<body background="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e1c678f4-c641-4015-a0f1-18e6154aa6a0/ddiuroz-0e05af31-9ac9-4316-b6d3-1c55abfca9e6.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UxYzY3OGY0LWM2NDEtNDAxNS1hMGYxLTE4ZTYxNTRhYTZhMFwvZGRpdXJvei0wZTA1YWYzMS05YWM5LTQzMTYtYjZkMy0xYzU1YWJmY2E5ZTYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.dHL9Er0WOTCnbnlZCS0lUxA0VOg9nXzx9xB0aH6tqtc">
+<body>
 
 <p>&nbsp;</p>
 <span class="auto-style2">
-<img alt="" height="115" src="file:///C:/Users/benwa/Pictures/ross.PNG" style="float: left" width="147" /></span><hr /><p>
+<img alt="" height="115" src="https://i.postimg.cc/cJ6dTrKJ/ross.png" style="float: left" width="147" /></span><hr /><p>
 &nbsp;</p>
 <h1 class="auto-style1">&nbsp;<span class="auto-style2">Bushfire Games</span></h1>
 <hr />
@@ -236,6 +257,35 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+
+<div class="gallery">
+  <a target="_blank" href="img_5terre.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSgUgyID9CAanhKssUvi6fja-p-3VX9vIjhYgoMs_rQatpM4G5" alt="Cinque Terre" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSgUgyID9CAanhKssUvi6fja-p-3VX9vIjhYgoMs_rQatpM4G5" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSgUgyID9CAanhKssUvi6fja-p-3VX9vIjhYgoMs_rQatpM4G5" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSgUgyID9CAanhKssUvi6fja-p-3VX9vIjhYgoMs_rQatpM4G5" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
 
 </center>
 
